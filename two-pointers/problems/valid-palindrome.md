@@ -1,6 +1,6 @@
 ---
-pattern: "[[../Learning/DSA/two-pointers/concepts/two-pointers|two-pointers]]"
-variation: "[[../Learning/DSA/two-pointers/concepts/opposite-ends|opposite-ends]]"
+pattern: Two pointers
+variation: Opposite ends
 difficulty: Easy
 solvedDate: 2026-07-16
 link: https://leetcode.com/problems/valid-palindrome/description/
@@ -24,9 +24,11 @@ link: https://leetcode.com/problems/valid-palindrome/description/
 Initialize two pointers:
 - left = 0
 - right = string length - 1
+
 Before comparing:
 - If the current character at left is not alphanumeric, skip it -> left++.
 - If the current character at right is not alphanumeric, skip it -> right--.
+
 Compare characters:
 - After both pointers point to valid alphanumeric character.
 - Convert both to lowercase.
@@ -36,13 +38,14 @@ Compare characters:
 		- right--
 	- else
 		- return false
+
 Continue until the pointers cross.
 If no mismatch is found, the string is palindrome.
 ### Complexity:
-|             | Time                                                                                                    | Space |
-| ----------- | ------------------------------------------------------------------------------------------------------- | ----- |
-| Brute Force | O(n)                                                                                                    | O(n)  |
-| Optimized   | O(n) - left and right each move at most n times total across the whole run, regardless of loop nesting. | O(1)  |
+|                 | Time                                                                                                    | Space |
+| --------------- | ------------------------------------------------------------------------------------------------------- | ----- |
+| **Brute Force** | O(n)                                                                                                    | O(n)  |
+| **Optimized**   | O(n) - left and right each move at most n times total across the whole run, regardless of loop nesting. | O(1)  |
 ## What would break this approach?
 - Empty string - loop never runs and return true. but in this problem test case they wont give empty string.
 - String with only non-alphanumeric characters - both pointers skip non-alphanumeric characters and cross without comparing, return true.
@@ -50,36 +53,19 @@ If no mismatch is found, the string is palindrome.
 ### Code I wrote:
 ```java
 class Solution {
-
     public boolean isPalindrome(String s) {
-
         int left = 0;
-
         int right = s.length() - 1;
-
         while(left < right) {
-
             while(left < right && !Character.isLetterOrDigit(s.charAt(left))) left++;
-
             while(left < right && !Character.isLetterOrDigit(s.charAt(right))) right--;
-
-  
-
+            
             if(left < right && Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) return false;
 
-  
-
             left++;
-
             right--;
-
         }
-
-  
-
         return true;
-
     }
-
 }
 ```
