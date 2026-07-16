@@ -1,1 +1,1 @@
-#!/bin/bash sed -e '/^nextReviewDate:/d' -e '/^revisionStage:/d'
+tr -d '\r' | sed -e '/^nextReviewDate:/d' -e '/^revisionStage:/d'
