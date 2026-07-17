@@ -4,3 +4,4 @@
 - Requires sorted data (to avoid duplicates/missed cases and to know which side to move).
 
 ## Problems
+1. [3sum](../problems/3sum.md)
