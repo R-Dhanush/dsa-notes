@@ -51,10 +51,10 @@ Traverse the array using `i` until it is less than `nums.length - 2`. Because we
 
 At last return the triplet list.
 ## Complexity:
-|                 | Time     | Space |
-| --------------- | -------- | ----- |
-| **Brute Force** | O(n ^ 3) | O(k)  |
-| **Optimized**   | O(n ^ 2) | O(k)  |
+|                 | Time     | Space                                                                                                                                                                        |
+| --------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Brute Force** | O(n ^ 3) | O(                                                                                                                                                                           |
+| **Optimized**   | O(n ^ 2 O(log n) + O(k) -> Space = O(log n) from the recursive call stack of `Arrays.sort()` (quicksort halves the array at each level), plus O(k) for storing the output triplets. ->  |
 ## What would break this approach?
 - If the array weren't sorted, this approach breaks entirely. 
 ## Code I wrote:
