@@ -2,6 +2,7 @@
 > Using two (or more) indices to traverse a data structure, making decisions based on the values they point to, to avoid nested loops(O(n^2) -> O(n)).
 ## Variations
 1. [opposite-ends](opposite-ends.md)
+2. [same-direction](same-direction.md)
 ## When to use two pointers
 - Input is an array, string, or linked list.
 - Sorted or sortable data, especially for pair/triplet-sum problems.
