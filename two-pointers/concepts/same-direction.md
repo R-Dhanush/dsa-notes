@@ -3,3 +3,4 @@
 - Doesn't require sorted data.
 ## Problems
 1. [remove-duplicates-from-sorted-array](../problems/remove-duplicates-from-sorted-array.md)
+2. [move-zeroes](../problems/move-zeroes.md)
