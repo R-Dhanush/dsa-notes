@@ -3,6 +3,7 @@
 ## Variations
 1. [opposite-ends](opposite-ends.md)
 2. [same-direction](same-direction.md)
+3. [fixed-element+opposite-ends](fixed-element+opposite-ends.md)
 ## When to use two pointers
 - Input is an array, string, or linked list.
 - Sorted or sortable data, especially for pair/triplet-sum problems.
