@@ -3,3 +3,4 @@
 - Doesn't require sorted input.
 ## Problems:
 1. [sort-colors](../problems/sort-colors.md)
+2. [sort-array-by-parity](../problems/sort-array-by-parity.md)
