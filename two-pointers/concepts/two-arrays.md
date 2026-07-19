@@ -5,3 +5,4 @@
 ## Problems
 1. [merge-sorted-array](../problems/merge-sorted-array.md)
 2. [intersection-of-two-arrays](../problems/intersection-of-two-arrays.md)
+3. [intersection-of-two-arrays-ii](../problems/intersection-of-two-arrays-ii.md)
