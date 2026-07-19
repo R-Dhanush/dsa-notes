@@ -6,6 +6,7 @@
 3. [fixed-element+opposite-ends](fixed-element+opposite-ends.md)
 4. [two-fixed-element+opposite-ends](two-fixed-element+opposite-ends.md)
 5. [partition](partition.md)
+6. [two-arrays](two-arrays.md)
 ## When to use two pointers
 - Input is an array, string, or linked list.
 - Sorted or sortable data, especially for pair/triplet-sum problems.
