@@ -10,3 +10,4 @@ Daily DSA practice log, organized by pattern.
   - [fixed-element+opposite-ends](two-pointers/concepts/fixed-element+opposite-ends.md)
   - [two-fixed-element+opposite-ends](two-pointers/concepts/two-fixed-element+opposite-ends.md)
   - [partition](two-pointers/concepts/partition.md)
+  - [two-arrays](two-pointers/concepts/two-arrays.md)
