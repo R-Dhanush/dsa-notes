@@ -8,3 +8,4 @@ Daily DSA practice log, organized by pattern.
   - [Opposite Ends](two-pointers/concepts/opposite-ends.md)
   - [same-direction](two-pointers/concepts/same-direction.md)
   - [fixed-element+opposite-ends](two-pointers/concepts/fixed-element+opposite-ends.md)
+  - [two-fixed-element+opposite-ends](two-pointers/concepts/two-fixed-element+opposite-ends.md)
