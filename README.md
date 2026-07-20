@@ -10,3 +10,4 @@ Daily DSA practice log, organized by pattern.
 	6. [two-arrays](two-pointers/concepts/two-arrays.md)
 2. [sliding-window](sliding-window/concepts/sliding-window.md)
 	1. [fixed-size-window](sliding-window/concepts/fixed-size-window.md)
+	2. [variable-size-window](sliding-window/concepts/variable-size-window.md)
