@@ -6,3 +6,4 @@
 1. [longest-substring-without-repeating-characters](../problems/longest-substring-without-repeating-characters.md).
 2. [max-consecutive-ones-iii](../problems/max-consecutive-ones-iii.md)
 3. [minimum-window-substring](../problems/minimum-window-substring.md)
+4. [minimum-size-subarray-sum](../problems/minimum-size-subarray-sum.md)
