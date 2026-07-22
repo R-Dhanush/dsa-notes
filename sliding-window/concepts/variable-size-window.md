@@ -7,3 +7,5 @@
 2. [max-consecutive-ones-iii](../problems/max-consecutive-ones-iii.md)
 3. [minimum-window-substring](../problems/minimum-window-substring.md)
 4. [minimum-size-subarray-sum](../problems/minimum-size-subarray-sum.md)
+5. [fruit-into-baskets](../problems/fruit-into-baskets.md)
+6. [longest-repeating-character-replacement](../problems/longest-repeating-character-replacement.md)
