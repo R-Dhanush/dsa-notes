@@ -5,3 +5,4 @@
 ## Problems
 1. [maximum-average-subarray-i](../problems/maximum-average-subarray-i.md)
 2. [find-all-anagrams-in-a-string](../problems/find-all-anagrams-in-a-string.md)
+3. [permutation-in-string](../problems/permutation-in-string.md)
