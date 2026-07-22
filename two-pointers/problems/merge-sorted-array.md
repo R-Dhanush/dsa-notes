@@ -2,7 +2,7 @@
 pattern: Two pointers
 variation: Two arrays
 difficulty: Easy
-solvedDate: 2026-07-19
+createdDate: 2026-07-19
 link: https://leetcode.com/problems/merge-sorted-array/description/
 ---
 ## Problem Summary:
@@ -45,10 +45,10 @@ Traverse both arrays using until `pointer1 >= 0` and `pointer2 >= 0`:
 Suppose if still there are elements `nums2` then fill all them into `nums1`.
 At last all the elements will be added to `nums1` in ascending order.
 ## Complexity:
-|                 | Time                 | Space         |
-| --------------- | -------------------- | ------------- |
-| **Brute Force** | O((m +n) log(m + n)) | O(log(m + n)) |
-| **Optimized**   | O(m + n)             | O(1)          |
+|                 | Time                                                                                                                                                                  | Space                                                                                         |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| **Brute Force** | O((m +n) log(m + n))                                                                                                                                                  | O(log(m + n))                                                                                 |
+| **Optimized**   | O(m + n) - `pointer1` moves backward at most `m` times, `pointer2` moves backward at most `n` times, and `pointer3` moves together with the pointer currently moving. | O(1) - merging happen in-place directly into `nums1`, no new array or data structure created. |
 ## What would break this approach?
 - If `nums2` is empty (`n = 0`) — the first while loop never runs since `pointer2 = -1` fails `pointer2 >= 0` immediately, and the second while loop also never runs for the same reason. `nums1` is returned unchanged, which is correct since there's nothing to merge in.
 - If `nums1`'s initial `m` elements aren't actually sorted, or `nums2` isn't sorted — this approach breaks entirely, since the comparison logic assumes both are already in sorted order.
