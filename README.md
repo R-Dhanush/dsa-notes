@@ -11,3 +11,4 @@ Daily DSA practice log, organized by pattern.
 2. [sliding-window](sliding-window/concepts/sliding-window.md)
 	1. [fixed-size-window](sliding-window/concepts/fixed-size-window.md)
 	2. [variable-size-window](sliding-window/concepts/variable-size-window.md)
+3. [prefix-sum](prefix-sum/concepts/prefix-sum.md)
