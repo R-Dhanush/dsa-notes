@@ -5,3 +5,4 @@
 	- OR you need to count/find how many ranges satisfy a condition (e.g. "how many subarrays sum to K") - this variant pairs prefix sum with a HashMap, since it's a search/count problem, not a direct lookup.
 ## Problems
 1. [range-sum-query-immutable](../problems/range-sum-query-immutable.md)
+2. [running-sum-of-1d-array](../problems/running-sum-of-1d-array.md)
