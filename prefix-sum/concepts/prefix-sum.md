@@ -4,3 +4,4 @@
 	- You need to answer the SAME KIND of range question repeatedly on a FIXED array (e.g. "sum from i to j," asked many times). 
 	- OR you need to count/find how many ranges satisfy a condition (e.g. "how many subarrays sum to K") - this variant pairs prefix sum with a HashMap, since it's a search/count problem, not a direct lookup.
 ## Problems
+1. [range-sum-query-immutable](../problems/range-sum-query-immutable.md)
