@@ -15,8 +15,10 @@ link: https://leetcode.com/problems/range-sum-query-immutable/description/
 ## Brute Force:
 - For every query recompute the sum for given range.
 ## Observation:
-- We no need to directly store the given array.
-- We can store the precomputed cumulative sum in a new array. so that we can answer every range query in O(1).
+- The sum of any range [left, right] can be obtained if we know: 
+	- The sum of elements from the start to right. 
+	- The sum of elements from the start to left - 1. 
+- Subtracting the two cumulative sums gives the answer in O(1).
 ## Intuition:
 Constructor: 
 - build `prefixSum` with size `nums.length + 1`. 
