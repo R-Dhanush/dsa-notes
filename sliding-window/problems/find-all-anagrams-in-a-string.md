@@ -2,13 +2,13 @@
 pattern: Sliding window
 variation: Fixed-size window
 difficulty: Medium
-solvedDate: 2026-07-20
+createdDate: 2026-07-20
 link: https://leetcode.com/problems/find-all-anagrams-in-a-string/description/
 ---
 ## Problem Summary:
 - Given two strings `s` and `p`, return an array of all the start indices of `p`'s anagrams in `s`.
 - `s` and `p` consist of lowercase letters.
-- Arrays length range from 1 to 3 * 10 ^ 4.
+- Strings length range from 1 to 3 * 10 ^ 4.
 ## What made me recognize the pattern?
 - Problem involves a contiguous substring.
 - Need to find positions where a window matches a specific pattern. it points towards [fixed-size-window](../concepts/fixed-size-window.md) variation.
@@ -18,6 +18,7 @@ link: https://leetcode.com/problems/find-all-anagrams-in-a-string/description/
 ## Observation:
 - The window size is fixed.
 - Window size is `p` string length.
+- Two strings are anagrams if and only if their character frequencies are identical.
 - When the window shifts by one position, only one character leaves and one character enters. 
 - Therefore, we can update the window frequency in O(1) time instead of recomputing it.
 - If `s` length is less than `p`, then we can state that there is no `p`'s anagram in `s`.
@@ -45,7 +46,7 @@ At last return the list.
 |                 | Time     | Space |
 | --------------- | -------- | ----- |
 | **Brute Force** | O(n * k) | O(1)  |
-| **Optimized**   | O(n)     | O()   |
+| **Optimized**   | O(n)     | O(1)  |
 ## What would break this approach?
 - The 26-size frequency arrays rely on the guarantee that s and p contain only lowercase letters. If the problem allowed uppercase, digits, or other characters, the array size (and index formula `charAt(i) - 'a'`) would need to change.
 ## Code I wrote:
