@@ -7,3 +7,4 @@
 1. [range-sum-query-immutable](../problems/range-sum-query-immutable.md)
 2. [running-sum-of-1d-array](../problems/running-sum-of-1d-array.md)
 3. [subarray-sum-equals-k](../problems/subarray-sum-equals-k.md)
+4. [continuous-subarray-sum](../problems/continuous-subarray-sum.md)
