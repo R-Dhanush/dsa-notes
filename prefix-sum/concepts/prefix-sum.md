@@ -9,3 +9,4 @@
 3. [subarray-sum-equals-k](../problems/subarray-sum-equals-k.md)
 4. [continuous-subarray-sum](../problems/continuous-subarray-sum.md)
 5. [product-of-array-except-self](../problems/product-of-array-except-self.md)
+6. [range-sum-query-2d-immutable](../problems/range-sum-query-2d-immutable.md)
