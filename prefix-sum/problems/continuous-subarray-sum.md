@@ -14,7 +14,7 @@ link: https://leetcode.com/problems/continuous-subarray-sum/
 ## What made me recognize the pattern?
 - Need to determine whether a subarray sum satisfies a mathematical condition.
 - The condition involves checking if a subarray sum is divisible by `k`.
-- Prefix sum with modulo is useful when checking divisibility properties of subarray sums.
+- [prefix-sum](../concepts/prefix-sum.md) with modulo is useful when checking divisibility properties of subarray sums.
 ## Brute Force:
 - Generate every possible subarray of length at least 2.
 - Calculate its sum and check whether `sum % k == 0`.
@@ -42,12 +42,12 @@ Traverse the array:
     - We store only the first occurrence because it gives the maximum possible subarray length.
 - If no valid subarray is found after traversing the array, return `false`.
 ## Complexity:
-|                 | Time     | Space        |
-| --------------- | -------- | ------------ |
-| **Brute Force** | O(n ^ 2) | O(1)         |
-| **Optimized**   | O(n)     | O(min(n, k)) |
+|                 | Time                        | Space                                                                                                         |
+| --------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| **Brute Force** | O(n ^ 2)                    | O(1)                                                                                                          |
+| **Optimized**   | O(n) - traversed the array. | O(min(n, k)) - the map can hold at most `k` distinct remainders, or at most `n` entries, whichever is smaller |
 ## What would break this approach?
-- This approach relies on modulo arithmetic. If `k == 0`, performing `% k` would cause an exception.
+- None.
 ## Code I wrote:
 ```java
 class Solution {
