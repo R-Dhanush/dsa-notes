@@ -1,0 +1,16 @@
+# Speed Ratio
+- If `fast` ever laps back around to meet `slow`, there's a cycle. If `fast` reaches the end first, there isn't one — like two runners on a track, one twice as fast as the other; they only meet again if the track loops.
+- **Cycle Detection** — question: "do slow and fast ever land on the same node?"
+	- If yes → cycle exists. If `fast` reaches `null` → no cycle.
+	- Problems:
+		- [linked-list-cycle](../problems/linked-list-cycle.md)
+		- [happy-number](../problems/happy-number.md)
+- **Middle of the List** — question: "where is `slow` when `fast` runs out of room to move?"
+	- By the time `fast` covers the full list, `slow` has covered exactly half — lands at the middle.
+	- Even-length lists: `slow` lands on the _second_ of the two middle candidates (verified by tracing `1→2→3→4`).
+	- Problems:
+- **Cycle Entry Point** — Cycle Detection (phase 1, identical mechanism above) **plus** a genuinely separate second phase:
+	- Once `slow == fast`, reset one pointer to `head`. Move both at equal speed (1 step each) until they meet again — that meeting point is the cycle's start.
+	- Why phase 2 works: the distance from the meeting point back to the cycle's start equals the distance from `head` to the cycle's start.
+	- Problems: 
+		- [linked-list-cycle-ii](../problems/linked-list-cycle-ii.md)
