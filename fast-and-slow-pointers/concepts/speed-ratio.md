@@ -12,6 +12,7 @@
 	- Problems:
 		- [middle-of-the-linked-list](../problems/middle-of-the-linked-list.md)
 		- [palindrome-linked-list](../problems/palindrome-linked-list.md)
+		- [reorder-list](../problems/reorder-list.md)
 - **Cycle Entry Point** — Cycle Detection (phase 1, identical mechanism above) **plus** a genuinely separate second phase:
 	- Once `slow == fast`, reset one pointer to `head`. Move both at equal speed (1 step each) until they meet again — that meeting point is the cycle's start.
 	- Why phase 2 works: the distance from the meeting point back to the cycle's start equals the distance from `head` to the cycle's start.
