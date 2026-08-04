@@ -6,3 +6,4 @@
     - Otherwise, discard the sorted half.
 ## Problems
 - [search-in-rotated-sorted-array](../problems/search-in-rotated-sorted-array.md)
+- [find-minimum-in-rotated-sorted-array](../problems/find-minimum-in-rotated-sorted-array.md)
