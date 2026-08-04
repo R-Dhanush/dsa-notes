@@ -4,4 +4,4 @@
 ## Variations
 1. [exact-value-search](exact-value-search.md)
 2. [boundary-search](boundary-search.md)
-3. 
+3. [rotated-sorted-array](rotated-sorted-array.md)
