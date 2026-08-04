@@ -1,6 +1,6 @@
 ---
 pattern: Binary search
-variation:
+variation: Boundary search
 difficulty: Easy
 createdDate: 2026-08-03
 link: https://leetcode.com/problems/first-bad-version/description/
@@ -8,8 +8,8 @@ link: https://leetcode.com/problems/first-bad-version/description/
 ## Problem Summary:
 - Given `n` versions labeled 1 to `n`, and an API `isBadVersion(version)` that returns whether a given version is bad, find the **first** bad version. Once a version is bad, all following versions are also bad.
 ## What made me recognize the pattern?
-- The "bad version" property is monotonic — false (good) then true (bad) across the range, never toggling back — which is exactly the condition Boundary Search needs, even though there's no literal sorted array here.
-- Need the **first** position where a condition becomes true, points towards Binary Search, Boundary Search variation.
+- The `isBadVersion(version)` result is monotonic: it is `false` for all good versions and `true` for all bad versions. Once it becomes `true`, it never becomes `false` again.
+- Need to find the first version where the condition becomes `true`, which points to the Binary Search - Boundary Search (First True / Lower Bound) variation.
 ## Brute Force:
 - Check versions one by one, starting from 1, calling `isBadVersion()` until the first bad one is found.
 ## Observation:
