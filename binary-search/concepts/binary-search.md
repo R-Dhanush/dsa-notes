@@ -3,3 +3,5 @@
 - Requires the search space to be **sorted, or have a monotonic property** (a condition that's false then true, or true then false, across the range - not necessarily numeric sorting).
 ## Variations
 1. [exact-value-search](exact-value-search.md)
+2. [boundary-search](boundary-search.md)
+3. 
