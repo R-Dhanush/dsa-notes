@@ -7,3 +7,4 @@
 ## Problems
 - [first-bad-version](../problems/first-bad-version.md)
 - [search-insert-position](../problems/search-insert-position.md)
+- [find-first-and-last-position-of-element-in-sorted-array](../problems/find-first-and-last-position-of-element-in-sorted-array.md)

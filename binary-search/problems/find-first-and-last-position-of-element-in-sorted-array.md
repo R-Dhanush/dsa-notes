@@ -23,7 +23,7 @@ link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-s
 - Second pass find out the rightmost index.
 ## Intuition:
 **findIndex(nums, target)** (the lowerBound helper):
-- `left = 0`, `right = nums.length` (note: `length - 1` — this lets the function correctly return an out-of-bounds index when `target` is larger than every element).
+- `left = 0`, `right = nums.length` (note: `nums.length` — this lets the function correctly return an out-of-bounds index when `target` is larger than every element).
 - While `left < right`: 
 	- `mid = left + (right-left)/2`. 
 	- If `nums[mid] < target`, `left = mid + 1`. 
