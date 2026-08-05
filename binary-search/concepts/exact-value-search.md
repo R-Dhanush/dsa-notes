@@ -3,3 +3,4 @@
 - Three-way branch (equal, less than, greater than), stops immediately on a match.
 ## Problems
 - [binary-search](../problems/binary-search.md)
+- [search-a-2d-matrix](../problems/search-a-2d-matrix.md)
