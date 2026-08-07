@@ -5,3 +5,4 @@
 ## Problems
 - [koko-eating-bananas](../problems/koko-eating-bananas.md)
 - [minimum-number-of-days-to-make-m-bouquets](../problems/minimum-number-of-days-to-make-m-bouquets.md)
+- [capacity-to-ship-packages-within-d-days](../problems/capacity-to-ship-packages-within-d-days.md)
